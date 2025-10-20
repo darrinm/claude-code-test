@@ -1,16 +1,81 @@
-# React + Vite
+# React Demo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A showcase of interactive React components built with Vite, featuring modern styling and responsive design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Counter Component
+- Increment/decrement functionality
+- Reset button
+- Beautiful gradient purple design with smooth animations
 
-## React Compiler
+### Todo List Component
+- Add new todos with Enter key or button
+- Mark items as complete with checkboxes
+- Delete todos
+- Gradient pink design with hover effects
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React 19
+- Vite 7
+- Modern CSS with gradients and animations
+- ES6+ JavaScript
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Deployment
+
+This app is configured to deploy automatically to GitHub Pages using GitHub Actions.
+
+### Automatic Deployment
+
+1. Push changes to any branch (including `claude/*` branches)
+2. GitHub Actions will automatically build and deploy
+3. Enable GitHub Pages in repository settings:
+   - Go to Settings > Pages
+   - Source: "GitHub Actions"
+
+### Manual Deployment
+
+```bash
+# Deploy to GitHub Pages manually
+npm run deploy
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Counter.jsx       # Counter component
+│   ├── Counter.css       # Counter styles
+│   ├── TodoList.jsx      # Todo list component
+│   └── TodoList.css      # Todo list styles
+├── App.jsx               # Main app component
+├── App.css               # Main app styles
+└── main.jsx              # Entry point
+```
+
+## Live Demo
+
+Once deployed, the app will be available at:
+`https://[your-username].github.io/claude-code-test/`
+
+---
+
+Built with React + Vite
